@@ -1,0 +1,115 @@
+@media (max-width:1200px) {
+    
+    .CARDsECTION {
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+
+    }
+
+    .cardInfo {
+        width: 250px;
+        height: 200px;
+    }
+
+    .containerAli {
+        padding-bottom: 5%;
+        flex-direction: column-reverse;
+    }
+    .containerAli .textAli{
+        font-size: 12pt;
+        text-align: center;
+    }
+
+    .containerAli img {
+        width: 350px;
+    }
+     
+
+    .containerDes .right {
+        display: none;
+    }
+
+    .CARDsssECTION {
+        flex-direction: column;
+    }
+
+    .containerDes .containerTextPdes {
+        width: 100%;
+        font-size: 14pt;
+        text-align: center;
+    }
+    .containerDes .containerTextPdes p{
+        font-size: 12pt;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-ham {
+        display: block;
+    }
+
+    .container {
+        padding-top: 15% ;
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100vw;
+        height: 50%;
+    }
+
+   
+    .right-top{
+        display: none;
+    }
+    .right * {
+        text-align: center;
+    }
+
+    .right .textbem {
+        width: 60%;
+        font-size: 10pt;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width:650px) {
+    .container {
+        margin-top: 10%;
+    }
+
+    .textotitulo {
+        font-size: 25pt;
+    }
+
+    .right .textbem {
+        width: 80%;
+    }
+
+    .cardInfo{
+        height: 100%;
+        padding-bottom: 3%;
+    }
+
+    .texPDes {
+        font-size: 15pt;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .containerDoce{
+        width: 80vw;
+        height: 100vh;
+    }
+}

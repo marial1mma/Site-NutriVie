@@ -1,0 +1,53 @@
+.photo-gallery {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Mantém as imagens no formato redondo */
+    border-radius: 50%; /* Torna as imagens redondas */
+    object-fit: cover; /* Garante que a imagem cubra o círculo */
+    border: 0px; /* Opcional: Adiciona uma borda ao redor da imagem */
+    margin-top: 100px;
+}
+
+.caption {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.textSomos{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--fonte_texto);
+    padding: 20px;
+}
+
+.instagram-link {
+    color: #333; /* Cor inicial da palavra */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.instagram-link:hover {
+    color: #3c9250; /* Cor quando o mouse estiver em cima */
+}
+
+@media (max-width:1200px) {
+    .photo-gallery {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .containerDoce {
+        height: 100%;
+        padding:20% 0 10% 0 ;
+    }
+}

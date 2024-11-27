@@ -1,0 +1,43 @@
+@media (max-width:1200px) {
+
+
+    .containerDoce{
+        width: 100vw;
+        height: 100%;
+        padding-top: 30%;
+    }
+
+    .buttonsWrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .textDoce {
+        width: 60%;
+    }
+
+    
+}
+
+@media (max-width:400px) {
+
+
+    .containerDoce{
+        width: 100vw;
+        height: 50%;
+        padding-top: 30%;
+    }
+
+    .buttonsWrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .textDoce {
+        width: 60%;
+    }
+
+    
+}

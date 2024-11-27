@@ -1,0 +1,225 @@
+<!--  
+        Selecionar tudo -> ctrl + f2
+        Selecionar cada um -> ctrl + d
+        Formatar tudo (identação) -> alt+shift+f
+        abrir paleta de comandos -> ctrl + p
+        
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Imagens/caraNaMelancia.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="res_NutriVie.css">
+    <link rel="stylesheet" href="Header_resp.css">
+    <title>NutriVie</title>
+</head>
+
+<body>
+    <header>
+        <span class="logo">Nutri<span class="marc"></span>Vie</span>
+        <nav>
+            <a class="itemnav" href="./index.html"> Inicio </a>
+            <a class="itemnav" href="./QuemSomos.html"> Quem somos? </a>
+            <a class="itemnav" href="./contato.html"> Contatos </a>
+            <a class="itemnav" href="https://www.instagram.com/nutri_viee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram </a>
+        </nav>
+        <ion-icon name="menu-outline" class="menu-ham" id="menu-click"></ion-icon>
+    </header>
+
+    <div class="header-responsive">
+        <ion-icon name="arrow-back-circle-outline" id="back-icon"></ion-icon>
+        <div class="menu-responsive-center">
+            <a class="itemnav" href="./index.html"> Inicio </a>
+            <a class="itemnav" href="./QuemSomos.html"> Quem somos? </a>
+            <a class="itemnav" href="./contato.html"> Contatos </a>
+            <a class="itemnav" href="https://www.instagram.com/nutri_viee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram </a>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="left">
+            <img src="./Imagens/nutri.png" alt="nutri">
+        </div>
+        <div class=" right">
+            <div class="text">
+                <h1 class="textotitulo">
+                    Bem Vindo (a) a NutriVie!
+                </h1>
+                <p class="textbem">
+                    Nosso objetivo é apoiar você na busca por um estilo de vida
+                    mais saudável e equilibrado. Oferecemos dicas de nutrição, receitas,
+                    artigos informativos e ferramentas interativas para ajudar em sua jornada.
+                    Esteja à vontade para nos contatar para mais informações. Confira abaixo algumas
+                    sugestões de receitas saudáveis!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="CARDsECTION">
+        <div class="cardInfo">
+            <a href="sobremesa.html">
+                <img class="imgCard clickcard" src="./Imagens/cards/1.jpg" alt="imagem sobremesa ilustrativa"></a>
+        </div>
+
+        <div class="cardInfo">
+            <a href="sucos.html">
+                <img class="imgCard" src="./Imagens/cards/5.jpg" alt="imagem sucos ilustrativa"></a>
+        </div>
+
+        <div class="cardInfo">
+            <a href="pretreinos.html">
+                <img class="imgCard" src="./Imagens/cards/2.jpg" alt="imagem pre treinos ilustrativa"></a>
+        </div>
+
+        <div class="cardInfo">
+            <a href="vegetais.html">
+                <img class="imgCard" src="./Imagens/cards/4.jpg" alt="imagem vegetais ilustrativa"></a>
+        </div>
+    </section>
+
+    <section class="calculadoraIMC">
+        <div class="contain_calculadora">
+            <h2>Calculadora de IMC</h2>
+            <label for="height" class="inputRow">Altura (em metros):</label>
+            <input type="number" id="height" step="0.01" placeholder="Ex: 1.75">
+            <label for="weight" class="inputRow">Peso (em kg):</label>
+            <input type="number" id="weight" step="0.1" placeholder="Ex: 70">
+            <button onclick="calculateBMI()">Calcular IMC</button>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    </section>
+
+    <section class="containerAli">
+        <div class="left">
+            <div class="text">
+                <h1 class="texPDes"> Por que ter uma alimentação saudável?</h1>
+                <p class="textAli">
+                    Uma alimentação saudável é essencial para manter a saúde e o bem-estar.
+                    Ela ajuda a controlar o peso, prevenir doenças crônicas como doenças cardiovasculares e diabetes
+                    tipo 2,
+                    e melhorar a saúde mental com nutrientes como ômega-3 e antioxidantes.
+                    Além disso, fortalece o sistema imunológico, essencial para crianças, adolescentes e gestantes,
+                    e melhora a saúde digestiva com fibras e probióticos. Uma dieta equilibrada também garante energia,
+                    combate o envelhecimento precoce e contribui para uma aparência saudável.
+                    Em resumo, hábitos alimentares saudáveis promovem bem-estar, energia e uma vida de qualidade.
+                </p>
+            </div>
+        </div>
+        <div class="right-top">
+            <img src="./Imagens/food-img.png" alt="Imagem da Mulher comendo">
+        </div>
+    </section>
+
+    <section class="containerDes">
+        <div class="right">
+            <img src="./Imagens/animacaomoca.png" alt="Animação moça" id="anim" class="imgT">
+        </div>
+        <div class="containerTextPdes">
+            <h1 class="texPDes"> Por que ter horário para comer?</h1>
+            <p class="textDes">
+                Comer de forma inadequada e em horários irregulares pode levar a diversos problemas de
+                saúde, como obesidade, diabetes tipo 2, doenças cardíacas e outros distúrbios crônicos.
+                Uma dieta desequilibrada, rica em alimentos processados e pobre em nutrientes essenciais,
+                agrava esses problemas. Além disso, refeições fora de hora podem desregular o ritmo natural
+                do corpo, afetando a digestão, o metabolismo e o sono,
+                resultando em desequilíbrios hormonais, fome excessiva e dificuldade de concentração.
+            </p>
+        </div>
+    </section>
+
+    <section class="CARDsssECTION">
+        <h1>
+            Abaixo apresentamos sugestões para cada refeição do dia!
+        </h1>
+
+        <div class="buttonsssContainer">
+
+            <div class="">
+                <a href="cafeDamanha.html">
+                <img class="imgCard clickcard" src="./Imagens/cards/RefCafé.jpg" alt="imagem cafe ilustrativa"></a>
+            </div>
+
+            <div class="">
+                <a href="cafeDaTarde.html">
+                <img class="imgCard clickcard" src="./Imagens/cards/RefTarde.jpg" alt="imagem cafe da tarde ilustrativa"></a>
+            </div>
+
+            <div class="">
+                <a href="LancheLeve1.html">
+                <img class="imgCard clickcard" src="./Imagens/cards/RefLanche.jpg" alt="imagem lanche ilustrativa"></a>
+                </div>
+
+            <div class="">
+                <a href="jantar.html">
+                <img class="imgCard clickcard" src="./Imagens/cards/RefJantar.jpg" alt="imagem cafe da tarde ilustrativa"></a>
+            </div>
+
+            <div class="">
+                <a href="almoco.html">
+                <img class="imgCard clickcard" src="./Imagens/cards/RefAlmoço.jpg" alt="imagem almoco ilustrativa"></a>
+            </div>
+
+            <div class="">
+                <a href="LancheLeve2.html">
+                <img class="imgCard clickcard" src="./Imagens/cards/RefLancheLeve.jpg" alt="imagem lanchinho ilustrativa"></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let header_resp = document.querySelector(".header-responsive");
+
+        document.querySelector("#menu-click").addEventListener("click", () => {
+            header_resp.style.right = "0";
+        })
+
+        document.querySelector("#back-icon").addEventListener("click", () => {
+            header_resp.style.right = "-80vw";
+        })
+    </script>
+
+    <script>
+        function calculateBMI() {
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const resultDiv = document.getElementById('result');
+
+            if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+                resultDiv.textContent = 'Por favor, insira valores válidos para altura e peso.';
+                return;
+            }
+
+            const bmi = weight / (height * height);
+            let category = '';
+
+            if (bmi < 18.5) {
+                category = 'Abaixo do peso';
+            } else if (bmi >= 18.6 && bmi < 24.9) {
+                category = 'Peso normal';
+            } else if (bmi >= 25 && bmi < 29.9) {
+                category = 'Peso Ideal';
+            } else if (bmi >= 30 && bmi < 34.9) {
+                category = 'Sobrepeso';
+            } else if (bmi >= 35 && bmi < 39.9) {
+                category = 'Obesidade grau II ou severa';
+            } else {
+                category = 'Obesidade grau III ou mórbida';
+            }
+
+            resultDiv.textContent = `Seu IMC é ${bmi.toFixed(2)} (${category}).`;
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*NutriVie*/
+:root {
+    --cor1: rgb(17, 131, 106);
+    --cor2: rgb(0, 0, 0);
+    --verde: #779D65;
+    --fonte_titulo: "Poetsen One", sans-serif;
+    --fonte_texto: "Poppins", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 103vw;
+    box-shadow: 0px 0px 8px 0px black;
+    position: fixed;
+    z-index: 998;
+    background-color: var(--verde);
+    top: 0;
+}
+
+.logo {
+    margin-left: 60px;
+    font-size: 25pt;
+}
+
+.marc {
+    color: var(--verde);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+nav * {
+    padding: 3px;
+}
+
+.disabled {
+    border-bottom: 1px solid var(--cor1);
+    color: var(--cor1);
+}
+
+.abled:hover {
+    color: var(--cor1);
+
+}
+
+.inicio {
+    background-color: #C5D6BD;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 10px black;
+    background-size: cover;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #C5D6BD;
+
+}
+
+
+
+.left,
+.right {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.left img {
+    width: 600px;
+}
+
+.right .textbem {
+    font-size: 15pt;
+    text-align: center;
+}
+
+.right h1 {
+    text-align: center;
+}
+
+.menu-ham {
+    font-size: 20pt;
+    margin-right: 50px;
+    display: none;
+}
+
+.itemnav {
+    padding: 10px;
+}
+
+
+header .itemnav:hover {
+    border-radius: 20px 5px;
+    color: #d1f1c2;
+    padding: 10px;
+    background-color: #E4AfB3;
+}
+
+.CARDsECTION {
+    width: 100vw;
+    height: 30vh;
+    background-color: #C5D6BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.cardInfo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    transition: height 1s ease;
+}
+
+.imgCard:hover {
+    box-shadow: 5px 5px 5px 1px rgba(44, 44, 44, 0.459);
+    cursor: pointer;
+}
+
+
+.imgCard {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.textoCard {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.tCard {
+    color: #d1f1c2;
+}
+
+
+.textotitulo {
+    font-size: 30pt;
+    margin-bottom: 5%;
+}
+
+.titulobem {
+    color: var(--cor2);
+    font-size: 40px;
+}
+
+.textbem {
+    font-size: 10pt;
+    width: 600px;
+    height: 100px;
+    font-weight: normal;
+    font-family: var(--fonte_texto);
+}
+
+.pbem {
+    font-size: 35px;
+}
+
+.titulonutri {
+    color: var(--cor2);
+}
+
+.containerDes {
+    width: 100vw;
+    height: 100vh;
+    background-color: #C5D6BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.textDes {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--fonte_texto);
+    padding: 20px;
+}
+
+.containerAli {
+    width: 100vw;
+    height: 100vh;
+    background-color: #C5D6BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left, .right-top {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.text p {
+    text-align: left;
+    width: 70%;
+}
+
+.right-top img {
+    width: 70%;
+}
+
+.containerAli h1{
+    margin-bottom: 50px;
+}
+
+.textAli {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: var(--fonte_texto);
+    width: 80%;
+}
+
+.textAlii {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--fonte_texto);
+    padding: 80px;
+}
+
+.textP {
+    font-size: 26px;
+    padding: 38px;
+}
+
+.texPDes {
+    background-color: #C5D6BD;
+    padding: 20px;
+    font-size: 26px;
+}
+
+.containerTextPdes {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*Refeicao*/
+.CARDsssECTION {
+    width: 100vw;
+    height: 100%;
+    background-color: #C5D6BD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 80px;
+}
+
+.CARDsssECTION h1 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+
+.cardssInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #E4AFB3;
+    border-radius: 15px;
+    background-color: #E4AFB3;
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+.buttonsssContainer {
+    
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px 250px;
+    padding: 40px;
+}
+
+
+#anim {
+    width: 550px;
+    height: 550px;
+}
+
+.calculadoraIMC {
+    background-color: #C5D6BD;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain_calculadora {
+    width: 90%;
+    display: grid;
+    gap: 30px;
+}
+
+h2 {
+    font-family: var(--fonte_titulo);
+    font-size: 30pt;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.inputRow {
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    border-radius: 40px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+}
+
+button {
+    transition: 0.5s;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #3c9250;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    /* Faz o botão se comportar como bloco para centralização */
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: #b7ebc3;
+}
+
+.result {
+    margin: 40px 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.containerDoce {
+    width: 100%;
+    height: 100vh;
+    background-color: #C5D6BD;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente os elementos */
+    justify-content: center;
+    z-index: 100;
+    position: relative;    
+}
+
+.textDoce {
+    font-size: 18px;
+    width: 100%;
+    max-width: 700px;
+    font-weight: normal;
+    font-family: var(--fonte_texto);
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    margin-bottom: 50px; /* Espaço entre o texto e os botões - ajuste conforme necessário */
+}
+
+.buttonsWrapper {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas de botões */
+    gap: 80px; /* Espaço entre as duas colunas de botões */
+    margin: 10px 20px 10px 20px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* Espaço entre os botões na mesma coluna */
+}
+
+.botaoDoces1 {
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--fonte_texto);
+    transition: 0.5s;
+    border-radius: 80px;
+    margin: 0px;
+    background-color: #3c9250;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 430px;
+    /* Largura fixa */
+    flex: 1;
+    /* Faz com que o botão ocupe o máximo de largura disponível */
+    min-height: 60px;
+    /* Largura mínima para os botões */
+    padding: 10px;
+    /* Espaço interno para o botão */
+    box-sizing: border-box;
+    /* Inclui padding e borda na largura total */
+}
